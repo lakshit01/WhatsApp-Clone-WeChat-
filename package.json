@@ -2,6 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "this is a chat app",
+  "engines": {
+    "node": "12.11.1"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,7 +13,6 @@
   "author": "Lakshit",
   "license": "ISC",
   "dependencies": {
-    "node": "16.15.1",
     "nodemon": "^2.0.19",
     "socket.io": "^4.5.1"
   }
