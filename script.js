@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
     messageInput.value = '';
 })
 
-// const name = prompt("Please enter your name first");
+const name = prompt("Please enter your name first");
 socket.emit('new-user-joined', name);
 
 socket.on('user-joined', name => {
