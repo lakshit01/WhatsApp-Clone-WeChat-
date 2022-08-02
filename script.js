@@ -33,7 +33,7 @@ const name = prompt("Please enter your name first");
 socket.emit('new-user-joined', name);
 
 socket.on('user-joined', name => {
-    append(`${name} joined us`, 'right');
+    append(`${name} joined the discussion`, 'right');
 });
 
 socket.on('receive', data => {
@@ -41,5 +41,5 @@ socket.on('receive', data => {
 });
 
 socket.on('left', name => {
-    append(`${name} leave the chat`, 'left');
+    append(`${name} leave the discussion`, 'left');
 })
