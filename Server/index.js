@@ -27,3 +27,7 @@ io.on('connection', socket => {
     });
 });
 // console.log('sldfh')
+
+app.listen(port, () => {
+    console.log(`port no ${port} is running`)
+})
